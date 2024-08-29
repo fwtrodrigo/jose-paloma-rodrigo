@@ -1,11 +1,9 @@
-# Função para coletar informações sobre o pet
+nome = input("Nome do pet: ")
+especie = input("especie do pet: ")
+
 def coletar_informacoes_pet():
     print("Por favor, insira as informações sobre seu pet.")
 
-    # Coleta do nome do pet
-    nome = input("Nome do pet: ")
-
-    # Coleta da idade do pet, garantindo que seja um número inteiro
     while True:
         try:
             idade = int(input("Idade do pet (em anos): "))
@@ -16,7 +14,6 @@ def coletar_informacoes_pet():
         except ValueError:
             print("Por favor, insira um número válido para a idade.")
 
-    # Coleta do peso do pet, garantindo que seja um número flutuante
     while True:
         try:
             peso = float(input("Peso do pet (em kg): "))
@@ -27,11 +24,11 @@ def coletar_informacoes_pet():
         except ValueError:
             print("Por favor, insira um número válido para o peso.")
 
-    # Exibindo as informações coletadas
     print("\nInformações do pet:")
     print(f"Nome: {nome}")
     print(f"Idade: {idade} anos")
     print(f"Peso: {peso} kg")
+    print(f"especie: {especie} kg")
 
-# Chama a função para coletar e exibir as informações do pet
+
 coletar_informacoes_pet()
